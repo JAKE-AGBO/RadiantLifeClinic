@@ -43,3 +43,25 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
+//Show/hide faq answer
+
+document.addEventListener("DOMContentLoaded", function() {
+  const faqs = document.querySelectorAll(".faq");
+
+  faqs.forEach(faq => {
+      const answer = faq.querySelector(".question__answer p");
+      const icon = faq.querySelector(".faq__icon i");
+
+      faq.addEventListener("click", () => {
+          if (answer.style.display === "block") {
+              answer.style.display = "none";
+              icon.className = "uil uil-plus";
+          } else {
+              answer.style.display = "block";
+              icon.className = "uil uil-minus";
+          }
+      });
+  });
+});
+
