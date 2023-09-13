@@ -8,6 +8,25 @@ nav {
   @include gradientBackground;
   box-shadow: 0 1rem 1rem rgba($black-color, 0.1);
 
+    // nav styles on scroll using JS
+    &.window-scroll{
+      background: $white-color;
+      .container{
+        a{
+          color: $primary-color;
+
+          & > h3 {
+            color: $primary-color;
+          }
+        }
+
+        .button-change{
+          background: white;
+          border: 1px solid $secondary-color;
+        }
+      }
+    }
+
   .container {
     display: flex;
     justify-content: space-between;
@@ -39,6 +58,20 @@ nav {
 /*****************************MEDIA QUERIES (Medium Devices)*********************/
 @media screen and (max-width: 1024px) {
   nav {
+    // navbar styles on scroll using JS
+    &.window-scroll{
+      .container{
+        a{
+          color: $white-color;
+        }
+        button{
+          color: $primary-color;
+        }
+        .button-change{
+          color: $primary-color;
+        }
+      }
+    }
     .container {
       button {
         display: inline-block;
