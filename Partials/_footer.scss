@@ -6,8 +6,8 @@ footer {
 
   .container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
     font-size: 0.85rem;
 
     a {
@@ -34,10 +34,6 @@ footer {
         color: $white-color;
       }
 
-      & > h3{
-        color: $white-color;
-
-      }
 
       .footer__socials{
         gap: 1rem;

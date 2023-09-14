@@ -1,31 +1,32 @@
 nav {
   width: 100vw;
   height: 5rem;
-  position: fixed;
+  position: fixed; // Keep the navbar fixed
+  top: 0; // Stick it to the top
   z-index: 10;
   display: grid;
   place-items: center;
   @include gradientBackground;
   box-shadow: 0 1rem 1rem rgba($black-color, 0.1);
 
-    // nav styles on scroll using JS
-    &.window-scroll{
-      background: $white-color;
-      .container{
-        a{
+  // nav styles on scroll using JS
+  &.window-scroll {
+    background: $white-color;
+    .container {
+      a {
+        color: $primary-color;
+
+        & > h3 {
           color: $primary-color;
-
-          & > h3 {
-            color: $primary-color;
-          }
-        }
-
-        .button-change{
-          background: white;
-          border: 1px solid $secondary-color;
         }
       }
+
+      .button-change {
+        background: white;
+        border: 1px solid $secondary-color;
+      }
     }
+  }
 
   .container {
     display: flex;
@@ -54,6 +55,7 @@ nav {
     color: $white-color;
   }
 }
+
 
 /*****************************MEDIA QUERIES (Medium Devices)*********************/
 @media screen and (max-width: 1024px) {
