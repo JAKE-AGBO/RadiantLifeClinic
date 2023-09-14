@@ -4,6 +4,7 @@ header {
   display: grid;
   place-items: center;
   overflow: hidden;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 
   .container {
     margin-top: 3rem;
@@ -12,7 +13,7 @@ header {
     align-items: center;
     gap: 8%;
     justify-content: space-between;
-    
+
     .header__content {
       h1 {
         font-size: 3.5rem;
@@ -30,16 +31,36 @@ header {
   }
 }
 
+/*****************************MEDIA QUERIES (Small Devices)*********************/
+@media screen and (max-width: 600px) {
+  header {
+    height: auto;
+    padding: 3rem 1rem;
+    clip-path: none;
+
+    .container {
+      grid-template-columns: 1fr;
+      text-align: center;
+
+      .header__content {
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
 /*****************************MEDIA QUERIES (Medium Devices)*********************/
-@media screen and (max-width: 1024px) {
-  header{
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  header {
     height: 60vh;
 
-    .container{
+    .container {
       gap: 1rem;
 
-      .header__content{
-        h1{
+      .header__content {
+        h1 {
           font-size: 2.2rem;
         }
       }
@@ -47,15 +68,3 @@ header {
   }
 }
 
-/*****************************MEDIA QUERIES (Small Devices)*********************/
-@media screen and (max-width: 600px) {
-  header{
-    height:100vh;
-    padding-top: 3rem;
-    
-    .container{
-      grid-template-columns: 1fr;
-      text-align: center;
-    }
-  }
-}
