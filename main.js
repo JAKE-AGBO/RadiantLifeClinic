@@ -65,3 +65,67 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+
+//Count effect
+
+const h3Elements = document.querySelectorAll('.achievement__card h3');
+  const animationDuration = 5000; // 5 seconds
+  let hasCounted = false;
+
+  function animateNumbers(element, targetNumber, abbreviation) {
+    const initialNumber = 0;
+    const step = Math.ceil(targetNumber / (animationDuration / 20));
+    let currentNumber = initialNumber;
+
+    const interval = setInterval(() => {
+      if (currentNumber >= targetNumber) {
+        clearInterval(interval);
+        currentNumber = targetNumber;
+      }
+
+      element.textContent = `${currentNumber.toLocaleString()}${abbreviation}`;
+      currentNumber += step;
+    }, 20);
+  }
+
+  function startCountingWhenIntersecting(entries, observer) {
+    entries.forEach((entry) => {
+      if (!hasCounted && entry.isIntersecting) {
+        h3Elements.forEach((h3) => {
+          const target = h3;
+          const targetNumber = parseInt(target.getAttribute('data-count'), 10);
+          if (!isNaN(targetNumber)) {
+            animateNumbers(target, targetNumber, '+');
+          }
+        });
+        hasCounted = true;
+        observer.disconnect();
+      }
+    });
+  }
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.5, // Trigger when at least 50% of the element is visible
+  };
+
+  const observer = new IntersectionObserver(startCountingWhenIntersecting, observerOptions);
+
+  h3Elements.forEach((h3) => {
+    observer.observe(h3);
+  });
+
+
+
+  //Sliding Image
+  const slidingImage = document.getElementById("slidingImage");
+
+// Function to stop the sliding animation
+function stopSliding() {
+  slidingImage.style.animation = "none"; // Remove the animation
+}
+
+// Example: Stop the animation when you click a button
+const stopButton = document.getElementById("stopButton");
+stopButton.addEventListener("click", stopSliding);

@@ -1,60 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Radiant Life Clinic</title>
-  <!-- MINIFIED CSS -->
-  <link rel="stylesheet" href="../css/services.min.css">
-  <!-- UNICONS -->
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
- <!-- Aos animate on scroll -->
- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <!-- BOXICONS CDN -->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-</head>
-<body>
-  <nav>
-    <div class="container">
-      <a href="h3" class="nav__logo"><h3>Radiant Life Clinic</h3></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radiant Life Clinic</title>
+    <!-- MINIFIED CSS -->
+    <link rel="stylesheet" href="../css/style.min.css" />
+    <link rel="stylesheet" href="../css/about.min.css" />
+    <!-- UNICONS -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
+    />
+    <!-- Aos animate on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- BOXICONS CDN -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a href="h3" class="nav__logo"><h3>Radiant Life Clinic</h3></a>
 
-      <ul id="nav__items">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./services.html">Services</a></li>
-       <li><a href="./specialists.html">Specialists</a></li>
-       <li><a href="#">About</a></li>
-       <li><a href="./appointment.html" class="btn button-change">Book appointment</a></li>
-     </ul>
+        <ul id="nav__items">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./specialists.html">Specialists</a></li>
+          <li><a href="#">About</a></li>
+          <li>
+            <a href="./appointment.html" class="btn button-change"
+              >Book appointment</a
+            >
+          </li>
+        </ul>
 
-     <button id="open__nav-btn"><i class='bx bx-menu'></i></button>
-     <button id="close__nav-btn"><i class='bx bx-x'></i></button>
-   </div>
- </nav>
- <!-- ===================================End of Nav============================= -->
+        <button id="open__nav-btn"><i class="bx bx-menu"></i></button>
+        <button id="close__nav-btn"><i class="bx bx-x"></i></button>
+      </div>
+    </nav>
+    <!-- ===================================End of Nav============================= -->
 
- 
+    <section class="about__achievements">
+      <div class="container about__achievements-container">
+        <div class="about__achievements-left image-container">
+          <img
+            src="../Images/about achievements.svg"
+            alt="A pic of achievement pic animated"
+            id="slidingImage"
+          />
+        </div>
+        <div class="about__achievements-right">
+          <h1>What is Radiant Life Clinic?</h1>
+          <p>
+            Radiant Life Clinic, founded in 2015 by the visionary Mr. Agbo Jake,
+            is a renowned medical institution that has become synonymous with
+            excellence and compassionate care. Nestled in the heart of the
+            community, our clinic has been a trusted healthcare partner for
+            countless individuals and families. Mr. Agbo Jake, a man driven by
+            an unwavering commitment to improving the health and well-being of
+            his fellow citizens, embarked on a mission to create a healthcare
+            facility like no other. His vision was clear: to establish a place
+            where cutting-edge medical expertise would converge with the warmth
+            of personalized care. Over the years, Radiant Life Clinic has
+            transformed into a healthcare haven, renowned for its comprehensive
+            services and a team of dedicated medical professionals. Our
+            commitment to staying at the forefront of medical advancements
+            ensures that our patients receive the best possible care. Our
+            state-of-the-art facilities house a wide range of medical
+            specialties, from general medicine and surgery to specialized fields
+            like cardiology, orthopedics, and neurology. This extensive array of
+            services allows us to provide holistic care, addressing the diverse
+            needs of our patients. What truly sets Radiant Life Clinic apart is
+            our unwavering dedication to the well-being of our patients. Our
+            compassionate approach to healthcare ensures that every individual
+            who walks through our doors is treated with the utmost respect and
+            empathy. We understand that each patient is unique, and we take the
+            time to tailor our treatments to their specific needs. As we
+            continue to grow and evolve, our commitment to Mr. Agbo Jake's
+            vision remains steadfast. Radiant Life Clinic is not just a
+            healthcare facility; it's a place where healing, hope, and health
+            converge. Our journey began in 2015, and we look forward to many
+            more years of serving our community and making a positive impact on
+            the lives of those we are privileged to care for.
+          </p>
+          <div class="achievements__cards">
+            <article class="achievement__card">
+              <span class="achievement__icon">
+                <i class="bx bx-accessibility"></i>
+              </span>
+              <h3 data-count="10000">0</h3>
+              <p>Patients</p>
+            </article>
 
+            <article class="achievement__card">
+              <span class="achievement__icon">
+                <i class="uil uil-user-md"></i>
+              </span>
+              <h3 data-count="50">0</h3>
+              <p>Specialists</p>
+            </article>
 
- <footer>
-   <div class="container">
-     <article>
-       <a href="#" class="footer__logo"><h3>Radiant Life Clinic</h3></a>
-       <p>
-         Discover the path to better health and well-being at Radiant Life Clinic. Our dedicated team is here to provide you with compassionate care and comprehensive medical services. Your journey to a healthier life starts with us!
-       </p>
-       <div>
-         <i class="bx bxs-phone"></i>
-         <a href="tel:+2349071433338"><small>+2349071433338</small></a>
-       </div>
-       <div>
-         <i class="bx bx-mail-send"></i>
-         <a href="mailto:jakeagbo10@gmail.com"><small>jakeagbo10@gmail.com</small></a>
-       </div>
-     </article>
+            <article class="achievement__card">
+              <span class="achievement__icon">
+                <i class="uil uil-trophy"></i>
+              </span>
+              <h3 data-count="2000">0</h3>
+              <p>Recommendations</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
 
-     <!-- <article>
+    <!-- ................................End of Achievements.............................................. -->
+
+    <section id="specialists">
+      <h2>Surgery Specialists</h2>
+      <p>
+        Radiant Life Clinic boasts a team of highly skilled surgery specialists
+        who are dedicated to performing intricate surgeries with precision and
+        care. Whether it's a life-saving procedure or a cosmetic enhancement,
+        our surgery specialists are committed to delivering top-notch care.
+      </p>
+      <div class="container">
+        <article>
+          <div class="specialist__image">
+            <img src="../Images/specialist 1.png" alt="Specialist One" />
+          </div>
+          <div class="specialist__details">
+            <h4>Dr. Daniel Roza</h4>
+            <small>Surgery Specialist</small>
+          </div>
+          <div class="specialist__socials">
+            <a href="https://linkedin.com" target="_blank"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="https://facebook.com" target="_blank"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+            <a href="https://Instagram.com" target="_blank"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+          </div>
+          <a
+            href="https://api.whatsapp.com/send?phone=2348166075406"
+            class="specialist__whatsapp"
+            target="_blank"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
+        </article>
+
+        <article>
+          <div class="specialist__image">
+            <img src="../Images/specialist 2.jpg" alt="Specialist Two" />
+          </div>
+          <div class="specialist__details">
+            <h4>Dr. Stephanie Iglesias</h4>
+            <small>Brain Surgeon Specialist</small>
+          </div>
+          <div class="specialist__socials">
+            <a href="https://linkedin.com" target="_blank"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="https://facebook.com" target="_blank"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+            <a href="https://Instagram.com" target="_blank"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+          </div>
+          <a
+            href="https://api.whatsapp.com/send?phone=2348166075406"
+            class="specialist__whatsapp"
+            target="_blank"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
+        </article>
+
+        <article>
+          <div class="specialist__image">
+            <img src="../Images/specialist 3.avif" alt="Specialist three" />
+          </div>
+          <div class="specialist__details">
+            <h4>Dr. Carmen Djang</h4>
+            <small>Optomology Specialist</small>
+          </div>
+          <div class="specialist__socials">
+            <a href="https://linkedin.com" target="_blank"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="https://facebook.com" target="_blank"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+            <a href="https://Instagram.com" target="_blank"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+          </div>
+          <a
+            href="https://api.whatsapp.com/send?phone=2348166075406"
+            class="specialist__whatsapp"
+            target="_blank"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
+        </article>
+
+        <article>
+          <div class="specialist__image">
+            <img src="../Images/specialist 4.webp" alt="Specialist four" />
+          </div>
+          <div class="specialist__details">
+            <h4>Dr. Daniel Frank</h4>
+            <small>Surgery Specialist</small>
+          </div>
+          <div class="specialist__socials">
+            <a href="https://linkedin.com" target="_blank"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="https://facebook.com" target="_blank"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+            <a href="https://Instagram.com" target="_blank"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+          </div>
+          <a
+            href="https://api.whatsapp.com/send?phone=2348166075406"
+            class="specialist__whatsapp"
+            target="_blank"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
+        </article>
+
+        <article>
+          <div class="specialist__image">
+            <img src="../Images/specialist 5.jpg" alt="Specialist Five" />
+          </div>
+          <div class="specialist__details">
+            <h4>Dr. Raymond Odoh</h4>
+            <small>Cardiology Specialist</small>
+          </div>
+          <div class="specialist__socials">
+            <a href="https://linkedin.com" target="_blank"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="https://facebook.com" target="_blank"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+            <a href="https://Instagram.com" target="_blank"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+          </div>
+          <a
+            href="https://api.whatsapp.com/send?phone=2348166075406"
+            class="specialist__whatsapp"
+            target="_blank"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
+        </article>
+
+        <article>
+          <div class="specialist__image">
+            <img src="../Images/specialist 6.jpg" alt="Specialist six" />
+          </div>
+          <div class="specialist__details">
+            <h4>Dr. Francis Cooper</h4>
+            <small>Orthopedic Specialist</small>
+          </div>
+          <div class="specialist__socials">
+            <a href="https://linkedin.com" target="_blank"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="https://facebook.com" target="_blank"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+            <a href="https://Instagram.com" target="_blank"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+          </div>
+          <a
+            href="https://api.whatsapp.com/send?phone=2348166075406"
+            class="specialist__whatsapp"
+            target="_blank"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
+        </article>
+
+        <article>
+          <div class="specialist__image">
+            <img src="../Images/specialist 7.jpg" alt="Specialist Seven" />
+          </div>
+          <div class="specialist__details">
+            <h4>Dr. Brian Johnson</h4>
+            <small>Gynecology Specialist</small>
+          </div>
+          <div class="specialist__socials">
+            <a href="https://linkedin.com" target="_blank"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="https://facebook.com" target="_blank"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+            <a href="https://Instagram.com" target="_blank"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+          </div>
+          <a
+            href="https://api.whatsapp.com/send?phone=2348166075406"
+            class="specialist__whatsapp"
+            target="_blank"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
+        </article>
+
+        <article>
+          <div class="specialist__image">
+            <img src="../Images/specialist 8.png" alt="Specialist Eight" />
+          </div>
+          <div class="specialist__details">
+            <h4>Dr. Margaret Weah</h4>
+            <small>Surgery Specialist</small>
+          </div>
+          <div class="specialist__socials">
+            <a href="https://linkedin.com" target="_blank"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="https://facebook.com" target="_blank"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+            <a href="https://Instagram.com" target="_blank"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+          </div>
+          <a
+            href="https://api.whatsapp.com/send?phone=2348166075406"
+            class="specialist__whatsapp"
+            target="_blank"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
+        </article>
+      </div>
+    </section>
+    <!-- ......................End of Board of directors........................ -->
+
+    <footer>
+      <div class="container">
+        <article>
+          <a href="#" class="footer__logo"><h3>Radiant Life Clinic</h3></a>
+          <p>
+            Discover the path to better health and well-being at Radiant Life
+            Clinic. Our dedicated team is here to provide you with compassionate
+            care and comprehensive medical services. Your journey to a healthier
+            life starts with us!
+          </p>
+          <div>
+            <i class="bx bxs-phone"></i>
+            <a href="tel:+2349071433338"><small>+2349071433338</small></a>
+          </div>
+          <div>
+            <i class="bx bx-mail-send"></i>
+            <a href="mailto:jakeagbo10@gmail.com"
+              ><small>jakeagbo10@gmail.com</small></a
+            >
+          </div>
+        </article>
+
+        <!-- <article>
        <h3>Support</h3>
        <a href="#">Privacy Policy</a>
        <a href="#">Cookie Policy</a>
@@ -63,40 +405,45 @@
        <a href="#">Career</a>
      </article> -->
 
-     <article>
-       <h3>Permalinks</h3>
-       <a href="./index.html">Home</a>
-       <a href="#">Services</a>
-       <a href="./specialists.html">Specialists</a>
-       <a href="./about.html">About</a>
-       <a href="./appointment.html" class="btn-primary">Book appointment</a>
-     </article>
+        <article>
+          <h3>Permalinks</h3>
+          <a href="./index.html">Home</a>
+          <a href="./services.html">Services</a>
+          <a href="./specialists.html">Specialists</a>
+          <a href="#">About</a>
+          <a href="./appointment.html" class="btn-primary">Book appointment</a>
+        </article>
 
-     <article>
-       <h3>Contact us</h3>
-       <div class="footer__socials">
-         <a href="https://linkedin.com" target="_blank"><i class="bx bxl-linkedin"></i></a>
-         <a href="https://facebook.com" target="_blank"><i class="bx bxl-facebook"></i></a>
-         <a href="https://twitter.com" target="_blank"><i class="bx bxl-twitter"></i></a>
-         <a href="https://Instagram.com" target="_blank"><i class="bx bxl-instagram"></i></a>
-       </div></article>
-   </div>
+        <article>
+          <h3>Contact us</h3>
+          <div class="footer__socials">
+            <a href="https://linkedin.com" target="_blank"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="https://facebook.com" target="_blank"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+            <a href="https://Instagram.com" target="_blank"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+          </div>
+        </article>
+      </div>
 
-   <div class="copyright">
-     <small>&copy; Radiant Life Clinic. All Rights Reserved</small>
-   </div>
- </footer>
+      <div class="copyright">
+        <small>&copy; Radiant Life Clinic. All Rights Reserved</small>
+      </div>
+    </footer>
 
-
-
- <!-- Swiper JS -->
- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
- <script src="../main.js"></script>
- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
- <script>
-   AOS.init();
- </script>
- </body>
- </html>
-
-
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="../main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

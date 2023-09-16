@@ -3,3 +3,136 @@
 @import "./Partials/general";
 @import "./Partials/nav";
 @import "./Partials/footer";
+
+/* ========================ACHIEVEMENTS================================== */
+body {
+  padding-top: 5rem;
+
+  .about__achievements {
+    margin-top: 3rem;
+
+    .about__achievements-container {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      gap: 5rem;
+    }
+
+    .about__achievements-right {
+      p {
+        margin: 1.6rem 0 ;
+        font-size: 1.2rem;
+      }
+
+      h1 {
+        margin: 1.6rem 0;
+        font-size: 3rem;
+      }
+    }
+
+    .achievements__cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+
+      .achievement__card {
+        @include gradientBackground;
+        padding: 1.6rem;
+        border-radius: 1rem;
+        text-align: center;
+
+        &:hover {
+          @include gradientBackground;
+          box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+        }
+
+        &:nth-child(2) .achievement__icon {
+          background: $success-color;
+        }
+
+        &:nth-child(3) .achievement__icon {
+          background: $primary-color-variant;
+        }
+
+        p {
+          margin-top: 1rem;
+        }
+      }
+
+      .achievement__icon {
+        background-color: $secondary-color;
+        padding: 0.6rem;
+        border-radius: 1rem;
+        display: inline-block;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .image-container {
+    height: 100vh; /* Set the height to viewport height*/
+    overflow: hidden;
+    position: relative;
+  }
+
+  #slidingImage {
+    position: absolute;
+    bottom: 0; /* Start at the bottom of the container */
+    animation: slideUpDown 5s linear infinite alternate;
+  }
+
+  @keyframes slideUpDown {
+    0% {
+      transform: translateY(-100%); /* Start at the bottom */
+    }
+    100% {
+      transform: translateY(0); /* Slide to the top */
+    }
+  }
+}
+
+
+/* ==================================MEDIA QUERIES================================================= */
+       /* (Tablets) */
+       @media screen and (max-width: 1024px) {
+
+             body{
+
+               .about__achievements{
+                   margin-top: 2rem;
+                   
+                   .about__achievements-container{
+                       grid-template-columns: 1fr;
+                       gap: 4rem;
+                   }
+           
+                   .about__achievements-left{
+                          width: 80%;
+                          height: 50vh;
+                          margin: 0 auto;
+                   }
+               }
+             }
+
+  }
+       
+  /* (Mobiles) */
+          @media screen and (max-width: 600px) {
+               body{
+                .about__achievements{
+                  text-align: center;
+
+                  .achievements__cards{
+                       grid-template-columns: repeat(1,1fr);
+                       gap: 0.7rem;
+                  }
+                }
+
+               }
+
+          }
+
+
+
+
+
