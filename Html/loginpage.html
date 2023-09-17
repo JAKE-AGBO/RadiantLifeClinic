@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radiant Life Clinic</title>
+
+    <!-- MINIFIED CSS -->
+    <link rel="stylesheet" href="../css/style.min.css" />
+    <link rel="stylesheet" href="../css/loginpage.min.css" />
+    <!-- UNICONS -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
+    />
+    <!-- BOXICONS CDN -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a href="h3" class="nav__logo"><h3>Radiant Life Clinic</h3></a>
+
+        <ul id="nav__items">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./specialists.html">Specialists</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li>
+            <a href="#" class="btn button-change"
+              >Book appointment</a
+            >
+          </li>
+        </ul>
+
+        <button id="open__nav-btn"><i class="bx bx-menu"></i></button>
+        <button id="close__nav-btn"><i class="bx bx-x"></i></button>
+      </div>
+    </nav>
+    <!-- ===================================End of Nav============================= -->
+
+    <section class="forms">
+      <form action="" class="forms__signup form hidden">
+        <h3 class="form__heading">
+          Create an account so you can book an appointment!!!
+        </h3>
+        <input
+          type="text"
+          placeholder="Full Name e.g Agbo Jake"
+          id="fullname"
+          class="form__input"
+        />
+        <span class="error-message fullname-error"></span>
+        <input
+          type="text"
+          placeholder="Username e.g Jake"
+          id="username"
+          class="form__input"
+        />
+        <span class="error-message username-error"></span>
+        <div class="see__password">
+          <input
+            type="password"
+            placeholder="******"
+            minlength="6"
+            id="password"
+            class="form__input password__input"
+          />
+          <span class="password__toggle">Show</span>
+        </div>
+        
+        <span class="error-message password-error"></span>
+        <input
+          type="password"
+          placeholder="Confirm Password"
+          minlength="6"
+          id="conf-password"
+          class="form__input"
+        />
+        <span class="error-message confpassword-error"></span>
+        <span class="pass-response"></span>
+        <label for="agree">
+          <input type="checkbox" name="" id="agree" />
+          I agree with the terms &amp; conditions
+        </label>
+        <span class="error-message checkbox-error"></span>
+        <button type="submit">Create</button>
+        <p class="form__swap" data-form=".forms__login">
+          Have an account already login!
+        </p>
+      </form>
+
+
+      <form action="" class="forms__login form">
+        <h3 class="form__heading">Login into your account</h3>
+
+        <input
+          required
+          type="text"
+          placeholder="Username e.g jake"
+          id="log__username"
+          class="form__input"
+        />
+        <span class="error-message username-error"></span>
+        <div class="see__password">
+          <input
+            required
+            type="password"
+            placeholder="******"
+            minlength="6"
+            id="log__password"
+            class="form__input password__input"
+          />
+          <span class="password__toggle">Show</span>
+        </div>
+        <span class="error-message password-error"></span>
+        <span class="error-message checkbox-error"></span>
+        <button type="submit">Login</button>
+        <p class="form__swap" data-form=".forms__signup">
+          Don't have an account yet? Signup!
+        </p>
+      </form>
+    </section>
+
+    <footer>
+      <div class="container">
+        <article>
+          <a href="#" class="footer__logo"><h3>Radiant Life Clinic</h3></a>
+          <p>
+            Discover the path to better health and well-being at Radiant Life
+            Clinic. Our dedicated team is here to provide you with compassionate
+            care and comprehensive medical services. Your journey to a healthier
+            life starts with us!
+          </p>
+          <div>
+            <i class="bx bxs-phone"></i>
+            <a href="tel:+2349071433338"><small>+2349071433338</small></a>
+          </div>
+          <div>
+            <i class="bx bx-mail-send"></i>
+            <a href="mailto:jakeagbo10@gmail.com"
+              ><small>jakeagbo10@gmail.com</small></a
+            >
+          </div>
+        </article>
+
+        <!-- <article>
+       <h3>Support</h3>
+       <a href="#">Privacy Policy</a>
+       <a href="#">Cookie Policy</a>
+       <a href="#">Purchasing Policy</a>
+       <a href="#">Terms & Conditions</a>
+       <a href="#">Career</a>
+     </article> -->
+
+        <article>
+          <h3>Permalinks</h3>
+          <a href="./index.html">Home</a>
+          <a href="./services.html">Services</a>
+          <a href="./specialists.html">Specialists</a>
+          <a href="./about.html">About</a>
+          <a href="#" class="btn-primary">Book appointment</a>
+        </article>
+
+        <article>
+          <h3>Contact us</h3>
+          <div class="footer__socials">
+            <a href="https://linkedin.com" target="_blank"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="https://facebook.com" target="_blank"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+            <a href="https://Instagram.com" target="_blank"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="copyright">
+        <small>&copy; Radiant Life Clinic. All Rights Reserved</small>
+      </div>
+    </footer>
+
+    <!-- <script src="../main.js"></script> -->
+    <script src="../sweetalert.min.js"></script>
+    <script src="../forms.js"></script>
+  </body>
+</html>

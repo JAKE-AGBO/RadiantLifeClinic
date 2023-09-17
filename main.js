@@ -121,11 +121,24 @@ const h3Elements = document.querySelectorAll('.achievement__card h3');
   //Sliding Image
   const slidingImage = document.getElementById("slidingImage");
 
-// Function to stop the sliding animation
-function stopSliding() {
-  slidingImage.style.animation = "none"; // Remove the animation
-}
+  let isSliding = true; // Flag to track if the image is sliding
 
-// Example: Stop the animation when you click a button
-const stopButton = document.getElementById("stopButton");
-stopButton.addEventListener("click", stopSliding);
+  // Function to toggle the sliding animation
+  function toggleSliding() {
+    if (isSliding) {
+      slidingImage.style.animation = "none"; // Stop sliding
+      stopButton.textContent = "Sliding Image"; // Update button text
+    } else {
+      slidingImage.style.animation = "slideUpDown 5s linear infinite alternate"; // Start sliding
+      stopButton.textContent = "Stop Sliding Image"; // Update button text
+    }
+    isSliding = !isSliding; // Toggle the sliding state
+  }
+  
+  // Example: Stop/Resume the animation when you click a button
+  const stopButton = document.getElementById("stopButton");
+  stopButton.addEventListener("click", toggleSliding);
+  
+
+
+  
