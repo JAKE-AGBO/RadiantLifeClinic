@@ -6,8 +6,8 @@ openNavBtn.addEventListener("click", () => {
   navItems.style.display = "flex";
   openNavBtn.style.display = "none";
   closeNavBtn.style.display = "inline-block"
-})
-
+})          
+        
 const closeNav = () => {
   navItems.style.display = "none";
   openNavBtn.style.display = "inline-block";
